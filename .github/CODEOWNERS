@@ -4,7 +4,7 @@
 # Order is important: the last (not first) matching pattern "wins"
 
 # These owners will be the default owners for everything
-*               @davenicoll/admin @davenicoll/contributors
+*               @davenicoll/admins @davenicoll/contributors
 
 # engineering team must review Somefile changes
 **/Somefile     @davenicoll/engineering
