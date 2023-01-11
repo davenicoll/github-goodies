@@ -1,7 +1,7 @@
 ---
-name: Bug report
-about: Create a bug report to help us improve **PRODUCT**
-title: ''
+name: '🐛 Bug Report (old skool template)'
+about: 'Create a new ticket for a bug.'
+title: '🐛 [BUG] - <title>'
 labels: 'bug'
 assignees: ''
 

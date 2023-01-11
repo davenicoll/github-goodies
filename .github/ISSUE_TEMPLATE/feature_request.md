@@ -1,7 +1,7 @@
 ---
-name: Feature Request
-about: Suggest an new feature for Product
-title: ''
+name: '💡 Feature Request (old skool template)'
+about: 'Create a new ticket for a new feature request.'
+title: '💡 [REQUEST] - <title>'
 labels: 'feature request'
 assignees: ''
 
