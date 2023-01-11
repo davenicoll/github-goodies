@@ -1,0 +1,20 @@
+{
+  "timezone": "America/Vancouver",
+  "extends": [
+    "config:base",
+    "docker:disableMajor"
+  ],
+  "packageRules": [
+    {
+      "packageNames": ["awscli","boto3"],
+      "groupName": ["AWS CLI packages"],
+      "schedule": ["after 4pm on friday"]
+    }
+  ],
+  "github-actions": {
+    "enabled": false
+  },
+  "docker": {
+    "ignorePaths": ["rootfs/**"]
+  }
+}
