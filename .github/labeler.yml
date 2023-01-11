@@ -1,9 +1,6 @@
-direnv:
-- rootfs/etc/direnv/**
-
 docker:
-- Dockerfile.alpine
-- Dockerfile.debian
+- Dockerfile.*
+- Dockerfile
 
 docs:
 - docs/**
@@ -16,11 +13,11 @@ packages:
 - requirements*.txt
 
 scripts:
-- rootfs/usr/local/bin/**
-- rootfs/usr/bin/**
-
-shell:
-- rootfs/etc/profile.d/**
+- scripts/**
+- **/*.sh
 
 terraform:
-- rootfs/etc/direnv/rc.d/terraform
+- terraform/**
+
+python:
+- **/*.py
