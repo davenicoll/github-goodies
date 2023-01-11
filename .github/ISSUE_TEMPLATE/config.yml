@@ -2,8 +2,8 @@ blank_issues_enabled: false
 
 contact_links:
 
-- name: Community Slack Team
-  url: https://your-url-goes-here/slack/
+- name: Community Slack workspace
+  url: https://your-url-goes-here/
   about: |-
     Please ask and answer questions here.
 
