@@ -2,12 +2,12 @@ blank_issues_enabled: false
 
 contact_links:
 
-- name: Community Slack workspace
+- name: Project/product documentation site
   url: https://your-url-goes-here/
   about: |-
-    Please ask and answer questions here.
+    Project/product documentation can be found here.
 
-- name: Your website name
+- name: Your corporate site
   url: https://your-url-goes-here/
   about: |-
-    Our website.
+    Our corporate website.
