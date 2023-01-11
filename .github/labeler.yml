@@ -4,6 +4,7 @@ docker:
 
 docs:
 - 'docs/**'
+- '**/*.md'
 
 github:
 - '.github/*'
