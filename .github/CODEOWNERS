@@ -8,7 +8,6 @@
 
 # engineering team must review Somefile changes
 **/Somefile     @davenicoll/engineering
-**/Somefile.*   @davenicoll/engineering
 
 # platform team must review any changes to GitHub actions or configuration
 .github/*       @davenicoll/platform
