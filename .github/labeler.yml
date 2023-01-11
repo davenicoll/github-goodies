@@ -1,23 +1,28 @@
 docker:
-- Dockerfile.*
-- Dockerfile
+- 'Dockerfile.*'
+- 'Dockerfile'
 
 docs:
-- docs/**
+- 'docs/**'
 
 github:
-- .github/**
+- '.github/*'
+- '.github/**/*'
 
 packages:
-- packages*.txt
-- requirements*.txt
+- 'packages*.txt'
+- 'requirements*.txt'
 
 scripts:
-- scripts/**
-- **/*.sh
+- 'scripts/*'
+- 'scripts/**/*'
+- '**/*.sh'
 
 terraform:
-- terraform/**
+- 'terraform/**'
+- 'terraform/**/*'
+- '**/*.tf'
+- '**/*.tfvars'
 
 python:
-- **/*.py
+- '**/*.py'
