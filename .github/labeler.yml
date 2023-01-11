@@ -2,11 +2,11 @@ docker:
 - 'Dockerfile.*'
 - 'Dockerfile'
 
-docs:
+documentation:
 - 'docs/**'
 - '**/*.md'
 
-github:
+github_actions:
 - '.github/*'
 - '.github/**/*'
 
