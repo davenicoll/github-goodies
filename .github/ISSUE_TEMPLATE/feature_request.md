@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Suggest an new feature for Geodesic
+about: Suggest an new feature for Product
 title: ''
 labels: 'feature request'
 assignees: ''
