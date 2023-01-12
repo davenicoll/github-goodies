@@ -4,14 +4,14 @@
 # Order is important: the last (not first) matching pattern "wins"
 
 # These owners will be the default owners for everything
-*               @davenicoll/admins @davenicoll/contributors
+* @davenicoll/admins @davenicoll/contributors
 
 # engineering team must review Somefile changes
-**/Somefile     @davenicoll/engineering
+**/Somefile @davenicoll/engineering
 
 # platform team must review any changes to GitHub actions or configuration
-.github/*       @davenicoll/platform
+.github/* @davenicoll/platform
 
 # Of course, admins must approve changes to CODEOWNERS itself
-.github/CODEOWNERS  @davenicoll/admins
-.github/workflows/validate-codeowners.yaml   @davenicoll/admins
+.github/CODEOWNERS @davenicoll/admins
+.github/workflows/validate-codeowners.yaml @davenicoll/admins
