@@ -8,7 +8,6 @@ body:
     attributes:
       label: "Reason"
       description: What's the reason for this decision or change?
-      placeholder: ""
     validations:
       required: true
   - type: textarea
@@ -16,7 +15,6 @@ body:
     attributes:
       label: "Change"
       description: What's the change we're proposing and/or doing?
-      placeholder: ""
     validations:
       required: true
   - type: textarea
@@ -24,7 +22,6 @@ body:
     attributes:
       label: "Outcome"
       description: What becomes easier or more difficult to do because of this change?
-      placeholder: ""
     validations:
       required: true
   - type: dropdown
