@@ -1,0 +1,40 @@
+name: "🤔 Decision (new style github form template)"
+description: "Create a new decision record."
+title: "💡 [DECISION] - <title>"
+labels: ["decision"]
+body:
+  - type: textarea
+    id: reason
+    attributes:
+      label: "Reason"
+      description: What's the reason for this decision or change?
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: "Change"
+      description: What's the change we're proposing and/or doing?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: "Outcome"
+      description: What becomes easier or more difficult to do because of this change?
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: "Status"
+      description: What is the status of this decision?
+      multiple: false
+      options:
+        - Proposed
+        - Accepted
+        - Rejected
+        - Deprecated
+        - Superseded
+    validations:
+      required: true
