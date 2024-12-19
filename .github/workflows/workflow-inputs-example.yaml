@@ -1,15 +1,17 @@
-name: Test workflow
+name: Workflow inputs example
 
 # Enable manual triggering with inputs
 on:
   workflow_dispatch:
     inputs:
       environment:
-        description: 'Deployment environment'
+        description: 'Deployment to environment'
         required: true
-        default: 'staging'
+        default: 'development'
         type: choice
         options:
+          - development
+          - testing
           - staging
           - production
       version:
