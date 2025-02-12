@@ -1,0 +1,21 @@
+{
+    "id": 3003187,
+    "name": "commit-with-company-email",
+    "target": "branch",
+    "source_type": "Repository",
+    "source": "davenicoll/github-goodies",
+    "enforcement": "active",
+    "conditions": null,
+    "rules": [
+      {
+        "type": "commit_author_email_pattern",
+        "parameters": {
+          "operator": "regex",
+          "pattern": "^[a-zA-Z0-9._%+-]+@company-domain\\.com$",
+          "negate": false,
+          "name": ""
+        }
+      }
+    ],
+    "bypass_actors": []
+}
