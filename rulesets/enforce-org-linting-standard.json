@@ -1,0 +1,59 @@
+{
+  "id": 3135923,
+  "name": "enforce-org-linting-standard",
+  "target": "branch",
+  "source_type": "Organization",
+  "source": "davenicoll/github-goodies",
+  "enforcement": "active",
+  "conditions": {
+    "ref_name": {
+      "exclude": [],
+      "include": [
+        "~DEFAULT_BRANCH"
+      ]
+    },
+    "repository_property": {
+      "exclude": [],
+      "include": [
+        {
+          "name": "language",
+          "source": "system",
+          "property_values": [
+            "JavaScript",
+            "TypeScript"
+          ]
+        },
+        {
+          "name": "criticality",
+          "source": "custom",
+          "property_values": [
+            "high",
+            "medium"
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "type": "workflows",
+      "parameters": {
+        "do_not_enforce_on_create": true,
+        "workflows": [
+          {
+            "repository_id": 586945170,
+            "path": ".github/workflows/lint.yaml",
+            "ref": "refs/heads/main"
+          }
+        ]
+      }
+    }
+  ],
+  "bypass_actors": [
+    {
+      "actor_id": 1,
+      "actor_type": "OrganizationAdmin",
+      "bypass_mode": "always"
+    }
+  ]
+}
