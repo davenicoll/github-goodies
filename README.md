@@ -1,4 +1,4 @@
 # github-goodies
 
-Useful github configuration files, templates and workflows.
+A collection of useful GitHub templates, workflows, rulesets and more. 
 
