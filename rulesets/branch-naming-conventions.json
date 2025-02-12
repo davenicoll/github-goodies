@@ -1,0 +1,34 @@
+{
+  "id": 3655082,
+  "name": "branch-naming-conventions",
+  "target": "branch",
+  "source_type": "Repository",
+  "source": "davenicoll/github-goodies",
+  "enforcement": "active",
+  "conditions": {
+    "ref_name": {
+      "exclude": [
+        "refs/heads/main",
+        "refs/heads/renovate/**/*"
+      ],
+      "include": [
+        "~ALL"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "type": "branch_name_pattern",
+      "parameters": {
+        "operator": "regex",
+        "pattern": "^(feature|develop|docs|bug|hotfix|chore)/(?:JIRA|jira)-\\d{4,5}-.*$",
+        "negate": false,
+        "name": "Branch naming regex"
+      }
+    },
+    {
+      "type": "non_fast_forward"
+    }
+  ],
+  "bypass_actors": []
+}
