@@ -1,0 +1,26 @@
+{
+  "id": 2949246,
+  "name": "prevent-github-actions-changes",
+  "target": "push",
+  "source_type": "Repository",
+  "source": "davenicoll/github-goodies",
+  "enforcement": "active",
+  "conditions": null,
+  "rules": [
+    {
+      "type": "file_path_restriction",
+      "parameters": {
+        "restricted_file_paths": [
+          ".github/workflows/*"
+        ]
+      }
+    }
+  ],
+  "bypass_actors": [
+    {
+      "actor_id": 5,
+      "actor_type": "RepositoryRole",
+      "bypass_mode": "always"
+    }
+  ]
+}
